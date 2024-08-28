@@ -1,0 +1,93 @@
+@import "./reset";
+@import "./variables";
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap");
+
+body {
+  background-color: $October-2-hex;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-family: "Nothing You Could Do", cursive;
+  color: $October-1-hex;
+  text-align: center;
+}
+
+h5 {
+  font-size: 1rem;
+  text-align: center;
+  padding: 0px;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+  color: $October-1-hex;
+  font-family: "Nothing You Could Do", cursive;
+}
+
+p {
+  margin-bottom: 1rem;
+  color: $October-5-hex;
+  font-family: "Annie Use Your Telescope", cursive;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 90vh;
+  width: 30rem;
+  margin-top: 1rem;
+  background: bisque;
+  border-radius: 0.25rem;
+  padding: 1.5rem 2rem;
+}
+
+.person {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 1rem;
+  margin-bottom: 1.5rem;
+  align-items: center;
+  justify-content: center;
+}
+.person img {
+  width: 5rem;
+  height: 5rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.person p {
+  margin-bottom: 0;
+}
+.btns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.btns button {
+  color: brown;
+  width: 5rem;
+  border: none;
+  background-color: darkcyan;
+  margin: 2rem 1rem 0 1rem;
+  font-size: 1rem;
+  padding: 0.5rem 0;
+  letter-spacing: 0.3rem;
+  border-radius: 0.5rem;
+  border: 1px solid $October-5-hex;
+  cursor: pointer;
+  font-family: "Annie Use Your Telescope", cursive;
+}
+.btns button:hover {
+  background-color: brown;
+  color: darkcyan;
+}
